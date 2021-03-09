@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 const mongoose = require("mongoose");
 
@@ -17,7 +16,7 @@ const itemSchema = new mongoose.Schema({
 const Item = mongoose.model("Item", itemSchema);
 
 const item1 = new Item({
-    name: "Welcome to our todolist!"
+    name: "Welcome to our ToDo List!"
 });
 
 const item2 = new Item({

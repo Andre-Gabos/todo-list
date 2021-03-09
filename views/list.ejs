@@ -1,7 +1,7 @@
 <%- include("header") -%>
 <body>
     <div class="box" id="heading">
-        <h1><%= listTitle %>!</h1>
+        <h1><%= listTitle %></h1>
     </div>
 
     <div class="box">
@@ -17,7 +17,7 @@
 
         <form class="item" action="/" method="POST">
             <input type="text" name="newItem" placeholder="new item" autocomplete="off">
-            <button type="submit" name="list" value=<%= listTitle %>>+</button>
+            <button type="submit" name="list" value= "<%= listTitle %>">+</button>
         </form>
     </div>
     

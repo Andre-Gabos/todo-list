@@ -8,7 +8,11 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://angDB:79C6CtHKwtjs%3A56@cluster0.ppgqt.mongodb.net/todolistDB?retryWrites=true&w=majority");
+const uri = "mongodb+srv://angDB:7b0oAwwnZAAr9d8l@cluster0.ppgqt.mongodb.net/todolistDB?retryWrites=true&w=majority";
+
+//7b0oAwwnZAAr9d8l
+
+mongoose.connect(uri , {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 const itemSchema = new mongoose.Schema({

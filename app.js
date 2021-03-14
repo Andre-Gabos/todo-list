@@ -2,13 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 const mongoose = require("mongoose");
+const keys = require('./key.js');
 
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-const uri = "mongodb+srv://angDB:7b0oAwwnZAAr9d8l@cluster0.ppgqt.mongodb.net/todolistDB?retryWrites=true&w=majority";
+const uri = "mongodb+srv://"+ keys.name +":"+ keys.pass +"@cluster0.ppgqt.mongodb.net/todolistDB?retryWrites=true&w=majority";
 
 //7b0oAwwnZAAr9d8l
 

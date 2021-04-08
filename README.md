@@ -1,13 +1,7 @@
 # todo-list
 
-<p>Primeira versão de um aplicativo web de lista de tarefas, programado em JavaScrip e Node.js (utilizando EJS, Express e MongoDB).</p>
-<p>Nessa primeira versão estão implementadas as funcionalidades de adicionar tarefas, marcá-las como completas e criar diferentes listas a partir da adição de "/&ltnome&gt" ao final da URL.</p>
-<p>Link para o app: https://damp-savannah-34685.herokuapp.com/<p>
+First version of a task manager web application, written using JavaScript and Node.js (with EJS, Express and MongoDB). This app was developed with the intent to learn how to use Node.js, Express and MongoDB to create a back-end that can contain all of the functionality of the app.
 
-<h5>Próximos passos:</h5>
-<ul>
-  <li><del>Adição de database (MongoDB)</del></li>
-  <li><del>Opção de excluir tarefas concluídas, além de marcá-las como completas.</del></li>
-  <li><del>Novas listas e tarefas criadas a partir de "/&ltnome&gt", com as mesmas funcionalidades da lista principal.</del></li>
-  <li><del>Deploy.</del></li>
-</ul>
+In this version of the app, you can add tasks, mark them as complete, delete them and create different lists by adding whichever name you choose as \<name\> to the end of the URL. I plan to return to this app in the future and implement new features, as well as integration with other applications.
+
+Link to the app's website: https://damp-savannah-34685.herokuapp.com/
